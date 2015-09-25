@@ -1,0 +1,19 @@
+<h1>All appliances</h1>
+
+<table>
+	<tr>
+		<th>Brand:</th>
+		<th>Model name:</th>
+		<th>Model number:</th>
+	</tr>
+
+	<% @appliance.each do |appliance| %>
+		<tr>
+			<td><%= appliance.brand_name %></td>
+			<td><%= appliance.app_model_name %></td>
+			<td><%= appliance.app_model_number %></td>
+		</tr>
+	<% end %>
+</table>
+
+<%= link_to 'Add an appliance', new_appliance_path %>
