@@ -18,10 +18,10 @@ ActiveRecord::Schema.define(version: 20150925042936) do
 
   create_table "appliances", force: :cascade do |t|
     t.string   "brand_name"
-    t.string   "model_name"
-    t.string   "model_number"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.string   "app_model_name"
+    t.string   "app_model_number"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
 end
