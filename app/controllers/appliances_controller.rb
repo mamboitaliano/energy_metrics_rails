@@ -1,4 +1,9 @@
 class AppliancesController < ApplicationController
+
+	def index
+		@appliance = Appliance.all
+	end
+
 	def show
 		@appliance = Appliance.find(params[:id])
 	end
