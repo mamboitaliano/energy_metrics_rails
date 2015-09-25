@@ -3,6 +3,10 @@ class AppliancesController < ApplicationController
 	end
 
 	def create
-		render plain: params[:appliance].inspect
+		@appliance = Appliance.new(params[:appliance])
+
+		@appliance.save
+		redirect_to @appliance
+		# render plain: params[:appliance].inspect
 	end
 end
