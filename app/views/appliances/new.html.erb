@@ -1,6 +1,6 @@
 <h1>enter a new appliance</h1>
 
-<%= form_for :appliance do |f| %>
+<%= form_for :appliance, url: appliances_path do |f| %>
 	<p>
 		<%= f.label :brand_name %> <br>
 		<%= f.text_field :brand_name %>
@@ -19,5 +19,5 @@
 	<p>
 		<%= f.submit %>
 	</p>
-	
+
 <% end %>
