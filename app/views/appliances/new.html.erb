@@ -1,0 +1,23 @@
+<h1>enter a new appliance</h1>
+
+<%= form_for :appliance do |f| %>
+	<p>
+		<%= f.label :brand_name %> <br>
+		<%= f.text_field :brand_name %>
+	</p>
+
+	<p>
+		<%= f.label :model_name %> <br>
+		<%= f.text_field :model_name %>
+	</p>
+
+	<p>
+		<%= f.label :model_number %> <br>
+		<%= f.text_field :model_number %>
+	</p>
+
+	<p>
+		<%= f.submit %>
+	</p>
+	
+<% end %>
